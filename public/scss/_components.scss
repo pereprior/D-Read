@@ -1,0 +1,21 @@
+@use 'variables';
+
+header {
+    background-color: #f7f9fc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    header nav a {
+        color: variables.$text-color;
+        transition: color 0.3s;
+    }
+    header nav a:hover {
+        color: #f39c12; /* Cambia el color del enlace al pasar el cursor */
+    }
+    header .btn-warning {
+        background-color: #f39c12;
+        border: none;
+        transition: background-color 0.3s;
+    }
+    header .btn-warning:hover {
+        background-color: #d87d06;
+    }
