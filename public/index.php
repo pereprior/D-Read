@@ -20,6 +20,5 @@
 
     <?php include('templates/partials/header.html'); ?>
 
-
 </body>
 </html>
