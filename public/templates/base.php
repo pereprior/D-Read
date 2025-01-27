@@ -11,11 +11,11 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/ajax/jquery.register.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 </head>
@@ -24,7 +24,7 @@
     <?php include('templates/partials/header.html'); ?>
 
     <!-- Contenido dinámico -->
-    <main class="container mt-4">
+    <main class="container full-width">
         <?php echo $content ?? ''; ?>
     </main>
 

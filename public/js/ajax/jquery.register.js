@@ -11,7 +11,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
         responseMessage.innerHTML = '<div class="alert alert-danger">Todos los campos son obligatorios.</div>';
         return;
     }
-
+  
     if (password !== confirmPassword) {
         responseMessage.innerHTML = '<div class="alert alert-danger">Las contraseñas no coinciden.</div>';
         return;
