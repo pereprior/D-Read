@@ -9,19 +9,19 @@ use App\Repository\UserRepository;
 use App\Entity\User;
 
 class UserService {
-    private $userRepository;
+    private $repository;
 
     public function __construct($db) {
-        $this->userRepository = new UserRepository($db);
+        $this->repository = new UserRepository($db);
     }
 
     public function register(string $username, string $email, string $password): void {
-        if ($this->userRepository->findByEmail($email)) {
+        if ($this->repository->findByEmail($email)) {
             throw new \Exception('El correo ya está registrado.');
         }
 
         $user = new User($username, $email, $password);
 
-        $this->userRepository->save($user);
+        $this->repository->save($user);
     }
 }

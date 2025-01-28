@@ -11,9 +11,11 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/ajax/jquery.register.js"></script>
