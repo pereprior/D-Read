@@ -39,10 +39,10 @@ class BookRepository
         return $stmt->execute();
     }
 
-    public function findByTitle(string $title): ?Book
+    public function findById(int $id): ?Book
     {
-        $stmt = $this->db->prepare("SELECT * FROM books WHERE title = :title");
-        $stmt->execute(['title' => $title]);
+        $stmt = $this->db->prepare("SELECT * FROM books WHERE id = :id");
+        $stmt->execute(['id' => $id]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if (!$result) {
@@ -50,13 +50,26 @@ class BookRepository
         }
 
         return new Book(
-            $result['id'],
-            $title,
+            $id,
+            $result['title'],
             $result['author'],
             $result['publication_year'],
             $result['genre'],
             $result['price']
         );
+    }
+
+    public function findBooksBy(string $title): array
+    {
+        $stmt = $this->db->prepare("SELECT * FROM books WHERE title LIKE :title");
+        $stmt->execute(['title' => '%' . $title . '%']);
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if (!$results) {
+            return [];
+        }
+
+        return $results;
     }
 
     public function findAll(): array

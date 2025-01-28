@@ -19,7 +19,7 @@ class BookService {
         return $this->repository->findAll();
     }
 
-    public function findByTitle(string $title): Book {
-        return $this->repository->findByTitle($title);
+    public function search($query): array {
+        return $this->repository->findBooksBy($query);
     }
 }
