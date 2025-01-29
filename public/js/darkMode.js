@@ -1,24 +1,23 @@
 $(document).ready(function() {
-    
-    if (localStorage.getItem("theme") === "dark") {
-        $("body").addClass("dark-mode");
-        $("#mode-icon").removeClass("bi-moon").addClass("bi-sun");
-        $(".bg-light").removeClass("bg-light").addClass("bg-dark");
-    }
+    const body = $("body");
+    const themeSwitcherButton = $("#toggle-mode");
+    const themeSwitcherIcon = $("#mode-icon");
 
-    $("#toggle-mode").click(function() {
-        $("body").toggleClass("dark-mode");
+    const isDarkMode = localStorage.getItem("theme") === "dark";
+    // Cambia el tema al cargar la pagina
+    switchTheme(isDarkMode);
 
-        let icon = $("#mode-icon");
-        if ($("body").hasClass("dark-mode")) {
-            icon.removeClass("bi-moon").addClass("bi-sun");
-            $(".bg-light").removeClass("bg-light").addClass("bg-dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            icon.removeClass("bi-sun").addClass("bi-moon");
-            $(".bg-dark").removeClass("bg-dark").addClass("bg-light");
-            localStorage.setItem("theme", "light");
-        }
+    // Cambia el tema al pulsar el boton
+    themeSwitcherButton.click(function() {
+        switchTheme(!body.hasClass("dark-mode"));
     });
-    
+
+
+    function switchTheme(isDark) {    
+        body.toggleClass("dark-mode", isDark);
+        $(".card").toggleClass("dark-mode", isDark);
+        themeSwitcherIcon.toggleClass("bi-moon", !isDark).toggleClass("bi-sun", isDark);
+        $(".bg-light, .bg-dark").toggleClass("bg-light", !isDark).toggleClass("bg-dark", isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
 });
