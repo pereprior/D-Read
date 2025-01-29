@@ -1,22 +1,37 @@
-$(function () {
+import searchBooks from "../ajax/search-books.js";
 
+$(function () {
     $("#tags").autocomplete({
-        source: function (request, response) {
-            $.ajax({
-                url: "api.php/search-books",
-                type: "GET",
-                data: { term: request.term },
-                success: function (data) {
-                    const titles = data.map((book) => book.title);
-                    response(titles);
-                },
-                error: function (xhr) {
-                    console.error("Error al cargar los libros:", xhr);
-                    response([]);
+        source: function (request) {
+
+            searchBooks(request.term, function (books) {
+                const container = $("#book-cards");
+                container.empty();
+
+                if (books.length === 0) {
+                    container.html('<p class="text-muted">No books found for your search.</p>');
+                    return;
                 }
+
+                books.forEach((book) => {
+                    const cardHtml = `
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="/img/${book.cover_image || 'default.jpg'}" class="card-img-top" alt="${book.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${book.title}</h5>
+                                    <p class="card-text">${book.author}</p>
+                                    <p class="text-muted">Published: ${book.publication_year}</p>
+                                    <p>${book.description || ''}</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>`;
+                    container.append(cardHtml);
+                });
             });
+
         },
         minLength: 2
     });
-    
 });

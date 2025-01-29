@@ -27,6 +27,11 @@ body {
   }
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 header {
   background-color: #f7f9fc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -59,13 +64,18 @@ header .btn-warning:hover {
   margin: 0;
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 /* ESTILO PARA EL CARRUSEL DEL INDICE */
 .slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
   touch-action: pan-y;
-  background-color: #F9F9F9;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   -webkit-tap-highlight-color: transparent;

@@ -28,6 +28,11 @@ header {
     margin: 0;
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 /* ESTILO PARA EL CARRUSEL DEL INDICE */
 
 .slick-slider {
@@ -35,7 +40,7 @@ header {
     display: block;
     box-sizing: border-box;
     touch-action: pan-y;
-    background-color: variables.$bg-color;
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
     -webkit-tap-highlight-color: transparent;

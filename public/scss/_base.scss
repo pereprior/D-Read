@@ -16,3 +16,8 @@ body {
         line-height: 1.4;
     }
 }
+
+.dark-mode {
+    background-color: variables.$dark-bg-color;
+    color: variables.$dark-text-color;
+}

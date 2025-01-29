@@ -1,10 +1,10 @@
 <?php
 
-require_once '../config/router.php';
+require_once '../src/controller/Router.php';
 require_once '../src/controller/UserController.php';
 require_once '../src/controller/BookController.php';
 
-use App\Router;
+use App\Controller\Router;
 use App\Controller\UserController;
 use App\Controller\BookController;
 

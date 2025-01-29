@@ -1,11 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Controller;
 
 class Router {
     private $routes = [];
 
-    public function addRoute(string $method, string $path, callable $handler): void {
+    public function addRoute(string $method, string $path, mixed $handler): void {
+        if (!is_callable($handler)) {
+            throw new \InvalidArgumentException("El handler proporcionado no es callable para la ruta $path.");
+        }
+
         $this->routes[] = [
             'method' => $method,
             'path' => $path,

@@ -11,11 +11,15 @@
       <div class="d-flex gap-2">
         {% if user.is_authenticated %}
           <a href="books.php" class="btn btn-warning rounded-pill px-4 fw-bold">Books</a>
-          <a href="cart.php" class="btn btn-warning rounded-pill px-4 fw-bold">Cart</a>
+          <a href="/books" class="btn btn-warning rounded-pill px-4 fw-bold">Cart</a>
         {% else %}
           <a href="register.php" class="btn btn-warning rounded-pill px-4 fw-bold">Sign Up</a>
           <a href="login.php" class="btn btn-warning rounded-pill px-4 fw-bold">Log in</a>
         {% endif %}
+
+        <button id="toggle-mode" class="btn btn-light">
+          <i id="mode-icon" class="bi bi-moon"></i>
+        </button>
       </div>
 
     </div>
