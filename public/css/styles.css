@@ -115,6 +115,9 @@ header .btn-warning:hover {
   font-weight: bold;
   border-bottom: 2px solid #0056b3;
 }
+.pages-nav .navbar-nav .nav-item .nav-link.active i {
+  color: #0056b3;
+}
 @media (max-width: 600px) {
   .pages-nav .navbar-nav .nav-item .nav-link {
     padding: 0.25rem;

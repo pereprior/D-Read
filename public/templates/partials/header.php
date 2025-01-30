@@ -11,28 +11,28 @@
             <div class="container">
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                      <a href="index.php" id="home" class="nav-link text-uppercase active">
-                          <i class="fas fa-home"></i>   Home
+                      <a href="index.php" id="home" class="nav-link text-uppercase <?= ($current_page == 'home') ? 'active' : '' ?>">
+                          <i class="fas fa-home"></i> Home
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" id="library" class="nav-link text-uppercase">
-                          <i class="fas fa-book"></i>   Library
+                      <a href="books.php" id="library" class="nav-link text-uppercase <?= ($current_page == 'library') ? 'active' : '' ?>">
+                          <i class="fas fa-book"></i> Library
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" id="soundtrack" class="nav-link text-uppercase">
-                          <i class="fas fa-music"></i>  SoundTrack
+                      <a href="soundtrack.php" id="soundtrack" class="nav-link text-uppercase <?= ($current_page == 'soundtrack') ? 'active' : '' ?>">
+                          <i class="fas fa-music"></i> SoundTrack
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" id="community" class="nav-link text-uppercase">
-                          <i class="fas fa-users"></i>  Community
+                      <a href="community.php" id="community" class="nav-link text-uppercase <?= ($current_page == 'community') ? 'active' : '' ?>">
+                          <i class="fas fa-users"></i> Community
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="#" id="profile" class="nav-link text-uppercase">
-                          <i class="fas fa-user"></i>   User Profile
+                      <a href="profile.php" id="profile" class="nav-link text-uppercase <?= ($current_page == 'profile') ? 'active' : '' ?>">
+                          <i class="fas fa-user"></i> User Profile
                       </a>
                   </li>
                 </ul>

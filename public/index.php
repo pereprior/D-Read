@@ -1,5 +1,6 @@
 <?php
 $title = "Inicio | D-Read";
+$current_page = 'home';
 ob_start(); // Inicia el almacenamiento en buffer
 ?>
 
