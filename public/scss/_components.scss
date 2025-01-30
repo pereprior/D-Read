@@ -300,7 +300,7 @@ i {
 }
 
 .footer {
-  background-color: #343a40;
+  background-color: #212529;
   color: #fff;
 
   h5 {
@@ -350,4 +350,8 @@ i {
           margin-bottom: 0.5rem;
       }
   }
+}
+
+.bg-light-footer {
+  background-color: mix(#f8f9fa, #343a40, 40%);
 }

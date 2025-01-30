@@ -18,7 +18,7 @@ $(document).ready(function() {
         $(".card").toggleClass("dark-mode", isDark);
         $(".fas").toggleClass("dark-mode", isDark);
         themeSwitcherIcon.toggleClass("fa-moon", !isDark).toggleClass("fa-sun", isDark);
-        $(".bg-light, .bg-dark").toggleClass("bg-light", !isDark).toggleClass("bg-dark", isDark);
+        $(".bg-light-footer, .bg-dark").toggleClass("bg-light-footer", !isDark).toggleClass("bg-dark", isDark);
         localStorage.setItem("theme", isDark ? "dark" : "light");
     }
 });
