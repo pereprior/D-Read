@@ -1,19 +1,43 @@
 $(document).ready(function() {
-    const pageHeader = document.getElementById('page-header');  
-    const languageSelectors = document.querySelectorAll('input[name="language"]');
-    const titles = {
-        en: "D-Read: Read. Listen. Dive in!",
-        es: "D-Read, Lee. Escucha. Sumérgete!"
-    };
-
-    const updatePageTitle = (event) => {
-        const selectedLanguage = event.currentTarget.value;
-        if (pageHeader) {
-            pageHeader.textContent = titles[selectedLanguage];
+    const translations = {
+        en: {
+            home: '<i class="fas fa-home"></i> Home',
+            library: '<i class="fas fa-book"></i> Library',
+            soundtrack: '<i class="fas fa-music"></i> Soundtrack',
+            community: '<i class="fas fa-users"></i> Community',
+            profile: '<i class="fas fa-user"></i> Profile',
+            login: '<i class="fas fa-sign-in-alt"></i> Log In',
+            signup: '<i class="fas fa-user-plus"></i> Sign Up',
+            logout: '<i class="fas fa-sign-out-alt"></i> Logout',
+            language: 'Language:'
+        },
+        es: {
+            home: '<i class="fas fa-home"></i> Inicio',
+            library: '<i class="fas fa-book"></i> Biblioteca',
+            soundtrack: '<i class="fas fa-music"></i> Banda Sonora',
+            community: '<i class="fas fa-users"></i> Comunidad',
+            profile: '<i class="fas fa-user"></i> Perfil',
+            login: '<i class="fas fa-sign-in-alt"></i> Iniciar Sesión',
+            signup: '<i class="fas fa-user-plus"></i> Registrarse',
+            logout: '<i class="fas fa-sign-out-alt"></i> Cerrar Sesión',
+            language: 'Idioma:'
         }
     };
 
-    languageSelectors.forEach(selector => {
-        selector.addEventListener('change', updatePageTitle);
-    });
+    const updateHeaderLanguage = function() {
+        const selectedLanguage = $(this).val();
+        const text = translations[selectedLanguage];
+
+        $('#home').html(text.home);
+        $('#library').html(text.library);
+        $('#soundtrack').html(text.soundtrack);
+        $('#community').html(text.community);
+        $('#profile').html(text.profile);
+        $('#login').html(text.login);
+        $('#signup').html(text.signup);
+        $('#logout').html(text.logout);
+        $('#language').html(text.language);
+    };
+
+    $('input[name="language"]').on('change', updateHeaderLanguage);
 });

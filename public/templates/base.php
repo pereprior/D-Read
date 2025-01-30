@@ -22,7 +22,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/ajax/register.js"></script>
     <script type="text/javascript" src="js/jquery/darkMode.js"></script>
-    <script type="text/javascript" src="js/jquery/languageSelector.js"></script>
     <script type="text/javascript" src="js/jquery/navigation.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>

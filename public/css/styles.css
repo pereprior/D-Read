@@ -81,7 +81,6 @@ header .btn-warning:hover {
 }
 
 .pages-nav {
-  background-color: #f8f9fa;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -204,14 +203,6 @@ header .btn-warning:hover {
   }
 }
 
-.full-width {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto;
-  padding: 0;
-  margin: 0;
-}
-
 .dark-mode {
   background-color: #121212;
   color: #ffffff;
@@ -293,7 +284,7 @@ header .btn-warning:hover {
 }
 .slick-slider .slick-slide {
   min-width: 300px;
-  max-width: 100%;
+  max-width: 80%;
   text-align: center;
   color: #5D5250;
 }
