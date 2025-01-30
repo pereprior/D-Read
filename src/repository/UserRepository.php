@@ -28,7 +28,8 @@ class UserRepository
         $stmt->bindParam(':email', $email);
 
         $password = $user->getPassword();
-        $stmt->bindParam(':password', $password);
+        $password_hash = password_hash($password, PASSWORD_BCRYPT);
+        $stmt->bindParam(':password', $password_hash);
         
         return $stmt->execute();
     }
@@ -42,6 +43,8 @@ class UserRepository
         if (!$result) {
             return null;
         }
+
+        error_log("User found: " . json_encode($result));
 
         return new User
         (

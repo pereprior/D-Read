@@ -19,6 +19,7 @@ try {
     $router = new Router();
 
     $router->addRoute('POST', '/register', [new UserController(), 'register']);
+    $router->addRoute('POST', '/login', [new UserController(), 'login']);
     $router->addRoute('GET', '/search-books', [new BookController(), 'searchBooks']);
 
     $method = $_SERVER['REQUEST_METHOD'];

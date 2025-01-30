@@ -17,6 +17,10 @@ body {
     }
 }
 
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .dark-mode {
     background-color: variables.$dark-bg-color;
     color: variables.$dark-text-color !important;

@@ -27,13 +27,16 @@ body {
   }
 }
 
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
 .dark-mode {
   background-color: #121212;
   color: #ffffff !important;
 }
 
 header {
-  background-color: #f7f9fc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -56,6 +59,151 @@ header .btn-warning:hover {
   background-color: #d87d06;
 }
 
+.header-title img {
+  height: 50px;
+}
+@media (max-width: 600px) {
+  .header-title img {
+    height: 50px;
+  }
+}
+
+.main-nav a, .pages-nav a {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+@media (max-width: 600px) {
+  .main-nav a, .pages-nav a {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
+
+.pages-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.pages-nav .navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .pages-nav .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.pages-nav .navbar-nav .nav-item {
+  position: relative;
+}
+.pages-nav .navbar-nav .nav-item .nav-link {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.pages-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+  background-color: rgba(0, 86, 179, 0.1);
+  border-radius: 0.25rem;
+}
+.pages-nav .navbar-nav .nav-item .nav-link.active {
+  color: #0056b3;
+  font-weight: bold;
+  border-bottom: 2px solid #0056b3;
+}
+@media (max-width: 600px) {
+  .pages-nav .navbar-nav .nav-item .nav-link {
+    padding: 0.25rem;
+  }
+}
+.pages-nav li#current a {
+  font-weight: 400;
+  color: #FFDB74;
+}
+
+.heading, .sub-heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .heading, .sub-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-primary {
+  color: #FFDB74;
+}
+
+.heading-secondary {
+  color: #F4A8A8;
+}
+
+.sub-heading {
+  font-size: x-large;
+}
+@media (max-width: 600px) {
+  .sub-heading {
+    font-size: large;
+  }
+}
+
+.language-selector .flag-selector {
+  position: relative;
+}
+.language-selector .flag-selector input[type=radio] {
+  display: none;
+}
+.language-selector .flag-selector label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.language-selector .flag-selector label:hover {
+  background-color: #f0f8ff;
+  border-color: rgb(26, 136.0223463687, 255);
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .language-selector .flag-selector label {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+  }
+}
+.language-selector .flag-selector i {
+  font-size: 1.25rem;
+  color: #0056b3;
+}
+@media (max-width: 600px) {
+  .language-selector .flag-selector i {
+    font-size: 1rem;
+  }
+}
+.language-selector .flag-selector input[type=radio]:checked + label {
+  border-color: #0056b3;
+  background-color: rgba(0, 86, 179, 0.1);
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.3);
+}
+.language-selector .flag-selector + .flag-selector {
+  margin-left: 1rem;
+}
+@media (max-width: 600px) {
+  .language-selector .flag-selector + .flag-selector {
+    margin-left: 0.5rem;
+  }
+}
+
 .full-width {
   width: 100% !important;
   max-width: 100% !important;
@@ -67,6 +215,10 @@ header .btn-warning:hover {
 .dark-mode {
   background-color: #121212;
   color: #ffffff;
+}
+
+.fas {
+  background-color: transparent;
 }
 
 /* ESTILO PARA EL CARRUSEL DEL INDICE */
@@ -154,6 +306,63 @@ header .btn-warning:hover {
 .slick-slider .slick-slide img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(77, 77, 77, 0.3);
+}
+
+i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+i:hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+}
+.footer h5 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+@media (max-width: 600px) {
+  .footer h5 {
+    font-size: 0.875rem;
+  }
+}
+.footer i {
+  color: #f8f9fa;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer i:hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+.footer a {
+  color: #adb5bd;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+.footer p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .footer p {
+    font-size: 0.75rem;
+  }
+}
+.footer .list-unstyled li {
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 600px) {
+  .footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

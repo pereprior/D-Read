@@ -11,7 +11,7 @@ class User {
     public function __construct($username, $email, $password) {
         $this->username = $username;
         $this->email = $email;
-        $this->password = $password ? password_hash($password, PASSWORD_BCRYPT) : '';
+        $this->password = $password;
     }
 
     public function getUsername() {
