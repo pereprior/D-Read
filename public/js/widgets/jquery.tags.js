@@ -1,6 +1,7 @@
 import searchBooks from "../ajax/search-books.js";
 
 $(function () {
+
     $("#tags").autocomplete({
         source: function (request) {
 
@@ -33,4 +34,5 @@ $(function () {
         },
         minLength: 2
     });
+    
 });
