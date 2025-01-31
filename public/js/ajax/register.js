@@ -8,12 +8,12 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     const responseMessage = document.getElementById("responseMessage");
 
     if (username === "" || email === "" || password === "" || confirmPassword === "") {
-        responseMessage.innerHTML = '<div class="alert alert-danger">Todos los campos son obligatorios.</div>';
+        responseMessage.innerHTML = '<div class="alert alert-danger">All fields are required.</div>';
         return;
     }
   
     if (password !== confirmPassword) {
-        responseMessage.innerHTML = '<div class="alert alert-danger">Las contraseñas no coinciden.</div>';
+        responseMessage.innerHTML = '<div class="alert alert-danger">Passwords do not match.</div>';
         return;
     }
 
@@ -40,7 +40,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
         .catch((error) => {
             console.error("Error:", error);
             responseMessage.innerHTML =
-                '<div class="alert alert-danger">Ocurrió un error inesperado. Inténtalo más tarde.</div>';
+                '<div class="alert alert-danger">An unexpected error occurred. Please try again later.</div>';
         });    
 
 });

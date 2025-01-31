@@ -18,7 +18,7 @@ ob_start();
     </div>
 </form>
 
-<div id="responseMessage" class="mt-3 mb-5 text-center"></div>
+<div id="responseMessage" class="container mt-3 text-center col-lg-3 col-md-6"></div>
 <br><br><br><br>
 <script src="js/ajax/login.js"></script>
 
