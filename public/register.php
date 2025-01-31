@@ -26,7 +26,7 @@ ob_start();
     </div>
 </form>
 
-<div id="responseMessage" class="mt-3 text-center"></div>
+<div id="responseMessage" class="mt-3 mb-5 text-center"></div>
 
 <script src="js/ajax/jquery.register.js"></script>
 

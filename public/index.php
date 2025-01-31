@@ -5,8 +5,10 @@ ob_start(); // Inicia el almacenamiento en buffer
 ?>
 
 <div class="myCarrousel">
-  <div><img src="img/promo1.png" alt="1"></div>
-  <div><img src="img/promo2.png" alt="2"></div>
+  <div><img src="img/promo4.png" alt="1"></div>
+  <div><img src="img/promo1.png" alt="2"></div>
+  <div><img src="img/promo3.png" alt="3"></div>
+  <div><img src="img/promo2.png" alt="4"></div>
 </div>
 
 <script src="js/plugins/jquery.carrousel.js"></script>

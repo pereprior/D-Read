@@ -21,7 +21,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="soundtrack.php" id="soundtrack" class="nav-link text-uppercase <?= ($current_page == 'soundtrack') ? 'active' : '' ?>">
+                      <a href="sound.php" id="soundtrack" class="nav-link text-uppercase <?= ($current_page == 'soundtrack') ? 'active' : '' ?>">
                           <i class="fas fa-music"></i> SoundTrack
                       </a>
                   </li>
