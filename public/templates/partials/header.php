@@ -11,7 +11,7 @@
             <div class="container">
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                      <a href="index.php" id="home" class="nav-link text-uppercase <?= ($current_page == 'home') ? 'active' : '' ?>">
+                      <a href="/" id="home" class="nav-link text-uppercase <?= ($current_page == 'home') ? 'active' : '' ?>">
                           <i class="fas fa-home"></i> Home
                       </a>
                   </li>
