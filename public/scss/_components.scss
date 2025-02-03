@@ -12,12 +12,18 @@ header nav a:hover {
     color: variables.$primary-color; /* Cambia el color del enlace al pasar el cursor */
 }
 header .btn-warning {
-    background-color: variables.$primary-color;
+    background-color: variables.$tertiary-color;
+    color: variables.$dark-bg-color;
     border: none;
     transition: background-color 0.3s;
+
+    i {
+        color: variables.$dark-bg-color !important;
+    }
 }
 header .btn-warning:hover {
-    background-color: darken(variables.$primary-color, 10%);
+    background-color: darken(variables.$tertiary-color, 10%);
+    color: variables.$dark-bg-color;
 }
 
 .header-title {
@@ -97,14 +103,6 @@ header .btn-warning:hover {
     }
 }
 
-.nav {
-    .nav-item {
-        a {
-            color: variables.$tertiary-color;
-        }
-    }
-}
-
 // Headings
 .heading, .sub-heading {
     font-family: variables.$font-family-base;
@@ -152,7 +150,6 @@ header .btn-warning:hover {
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: #f0f8ff;
                 border-color: lighten(variables.$primary-color, 20%);
                 transform: scale(1.05);
             }

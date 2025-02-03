@@ -21,11 +21,6 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a href="sound.php" id="soundtrack" class="nav-link text-uppercase <?= ($current_page == 'soundtrack') ? 'active' : '' ?>">
-                          <i class="fas fa-music"></i> SoundTrack
-                      </a>
-                  </li>
-                  <li class="nav-item">
                       <a href="community.php" id="community" class="nav-link text-uppercase <?= ($current_page == 'community') ? 'active' : '' ?>">
                           <i class="fas fa-users"></i> Community
                       </a>
@@ -35,6 +30,11 @@
                           <i class="fas fa-user"></i> User Profile
                       </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="about.php" id="about" class="nav-link text-uppercase <?= ($current_page == 'about') ? 'active' : '' ?>">
+                        <i class="fas fa-info-circle"></i> More About Us
+                    </a>
+                </li>
                 </ul>
             </div>
           </nav>
@@ -47,18 +47,18 @@
                           <span class="nav-link fw-bold">Welcome, <?= htmlspecialchars($_SESSION['user']['username']); ?></span>
                       </li>
                       <li class="nav-item">
-                          <a href="logout.php" id="logout" class="nav-link">
+                          <a href="logout.php" id="logout" class="nav-link btn btn-warning">
                               <i class="fas fa-sign-out-alt me-1"></i> Logout
                           </a>
                       </li>
                   <?php else: ?>
-                      <li class="nav-item">
-                          <a href="login.php" id="login" class="nav-link">
+                      <li class="nav-item mx-2">
+                          <a href="login.php" id="login" class="nav-link btn btn-warning">
                               <i class="fas fa-sign-in-alt me-1"></i> Log In
                           </a>
                       </li>
                       <li class="nav-item">
-                          <a href="register.php" id="signup" class="nav-link">
+                          <a href="register.php" id="signup" class="nav-link btn btn-warning">
                               <i class="fas fa-user-plus me-1"></i> Sign Up
                           </a>
                       </li>

@@ -46,17 +46,22 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #8AC4D0; /* Cambia el color del enlace al pasar el cursor */
+  color: #0d6efd; /* Cambia el color del enlace al pasar el cursor */
 }
 
 header .btn-warning {
-  background-color: #8AC4D0;
+  background-color: #ffc107;
+  color: #121212;
   border: none;
   transition: background-color 0.3s;
 }
+header .btn-warning i {
+  color: #121212 !important;
+}
 
 header .btn-warning:hover {
-  background-color: rgb(101.6158536585, 177.6524390244, 193.3841463415);
+  background-color: rgb(211, 158.25, 0);
+  color: #121212;
 }
 
 .header-title img {
@@ -105,18 +110,18 @@ header .btn-warning:hover {
   transition: all 0.3s ease-in-out;
 }
 .pages-nav .navbar-nav .nav-item .nav-link:hover {
-  color: #8AC4D0;
+  color: #0d6efd;
   text-decoration: none;
-  background-color: rgba(138, 196, 208, 0.1);
+  background-color: rgba(13, 110, 253, 0.1);
   border-radius: 0.25rem;
 }
 .pages-nav .navbar-nav .nav-item .nav-link.active {
-  color: #8AC4D0;
+  color: #0d6efd;
   font-weight: bold;
-  border-bottom: 2px solid #8AC4D0;
+  border-bottom: 2px solid #0d6efd;
 }
 .pages-nav .navbar-nav .nav-item .nav-link.active i {
-  color: #8AC4D0;
+  color: #0d6efd;
 }
 @media (max-width: 600px) {
   .pages-nav .navbar-nav .nav-item .nav-link {
@@ -125,11 +130,7 @@ header .btn-warning:hover {
 }
 .pages-nav li#current a {
   font-weight: 400;
-  color: #8AC4D0;
-}
-
-.nav .nav-item a {
-  color: #FFDB74;
+  color: #0d6efd;
 }
 
 .heading, .sub-heading {
@@ -143,7 +144,7 @@ header .btn-warning:hover {
 }
 
 .heading-primary {
-  color: #8AC4D0;
+  color: #0d6efd;
 }
 
 .heading-secondary {
@@ -177,8 +178,7 @@ header .btn-warning:hover {
   transition: all 0.3s ease;
 }
 .language-selector .flag-selector label:hover {
-  background-color: #f0f8ff;
-  border-color: rgb(210.7682926829, 232.6951219512, 237.2317073171);
+  border-color: rgb(114.1639344262, 170.6147540984, 253.8360655738);
   transform: scale(1.05);
 }
 @media (max-width: 600px) {
@@ -189,7 +189,7 @@ header .btn-warning:hover {
 }
 .language-selector .flag-selector i {
   font-size: 1.25rem;
-  color: #8AC4D0;
+  color: #0d6efd;
 }
 @media (max-width: 600px) {
   .language-selector .flag-selector i {
@@ -197,9 +197,9 @@ header .btn-warning:hover {
   }
 }
 .language-selector .flag-selector input[type=radio]:checked + label {
-  border-color: #8AC4D0;
-  background-color: rgba(138, 196, 208, 0.1);
-  box-shadow: 0 0 10px rgba(138, 196, 208, 0.3);
+  border-color: #0d6efd;
+  background-color: rgba(13, 110, 253, 0.1);
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
 }
 .language-selector .flag-selector + .flag-selector {
   margin-left: 1rem;
@@ -249,7 +249,7 @@ header .btn-warning:hover {
   transition: background-color 0.3s ease;
 }
 .slick-slider .slick-dots li button:hover, .slick-slider .slick-dots li button.slick-active {
-  background-color: #8AC4D0;
+  background-color: #0d6efd;
 }
 .slick-slider .slick-arrow {
   position: absolute;

@@ -3,7 +3,7 @@ $(document).ready(function() {
         en: {
             home: '<i class="fas fa-home"></i> Home',
             library: '<i class="fas fa-book"></i> Library',
-            soundtrack: '<i class="fas fa-music"></i> Soundtrack',
+            about: '<i class="fas fa-info-circle"></i> About Us',
             community: '<i class="fas fa-users"></i> Community',
             profile: '<i class="fas fa-user"></i> Profile',
             login: '<i class="fas fa-sign-in-alt"></i> Log In',
@@ -14,7 +14,7 @@ $(document).ready(function() {
         es: {
             home: '<i class="fas fa-home"></i> Inicio',
             library: '<i class="fas fa-book"></i> Biblioteca',
-            soundtrack: '<i class="fas fa-music"></i> Banda Sonora',
+            about: '<i class="fas fa-info-circle"></i> Conócenos',
             community: '<i class="fas fa-users"></i> Comunidad',
             profile: '<i class="fas fa-user"></i> Perfil',
             login: '<i class="fas fa-sign-in-alt"></i> Iniciar Sesión',
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
         $('#home').html(text.home);
         $('#library').html(text.library);
-        $('#soundtrack').html(text.soundtrack);
+        $('#about').html(text.about);
         $('#community').html(text.community);
         $('#profile').html(text.profile);
         $('#login').html(text.login);

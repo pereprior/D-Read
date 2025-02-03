@@ -1,6 +1,6 @@
 <?php
-$title = "Community | D-Read";
-$current_page = 'community';
+$title = "About Us | D-Read";
+$current_page = 'about';
 ob_start();
 
 include('templates/partials/error.html');
