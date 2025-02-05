@@ -38,7 +38,7 @@ session_start();
             <div class="container">
                 <h1 class="display-4 fw-bold">Bienvenido a D-Read</h1>
                 <p class="lead">Explora libros, comparte tus lecturas y sumérgete en la mejor experiencia literaria.</p>
-                <a href="register.php" class="btn btn-warning btn-lg mt-3 px-4">Únete ahora</a>
+                <a href="login.php" class="btn btn-warning btn-lg mt-3 px-4">Únete ahora</a>
             </div>
         </section>
     <?php endif; ?>

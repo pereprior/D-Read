@@ -244,7 +244,6 @@ i {
     transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
-        color: variables.$secondary-color;
         transform: scale(1.1);
     }
 }
@@ -307,7 +306,11 @@ i {
 }
 
 .fs-30 {
-    font-size: 30px !important;
+    font-size: 26px !important;
+}
+
+.card {
+    background-color: transparent !important;
 }
 
 .card-style {
@@ -346,18 +349,20 @@ i {
 
 .books-carousel {
     .slick-slide {
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
         &.slick-inactive {
             opacity: 0.5;
 
             .card-img-top {
                 height: 400px;
+                transform: scale(0.9);
             }
         }
 
         &.slick-active {
             opacity: 1;
+            transform: scale(1);
         }
     }
 
@@ -366,4 +371,9 @@ i {
         width: auto;
         object-fit: cover;
     }
+}
+
+.card-img-top {
+    height: 333px;
+    max-width: 100%;
 }

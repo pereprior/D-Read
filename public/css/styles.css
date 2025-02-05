@@ -263,7 +263,6 @@ i {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 i:hover {
-  color: #F4A8A8;
   transform: scale(1.1);
 }
 
@@ -321,7 +320,11 @@ i:hover {
 }
 
 .fs-30 {
-  font-size: 30px !important;
+  font-size: 26px !important;
+}
+
+.card {
+  background-color: transparent !important;
 }
 
 .card-style {
@@ -357,21 +360,28 @@ i:hover {
 }
 
 .books-carousel .slick-slide {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .books-carousel .slick-slide.slick-inactive {
   opacity: 0.5;
 }
 .books-carousel .slick-slide.slick-inactive .card-img-top {
   height: 400px;
+  transform: scale(0.9);
 }
 .books-carousel .slick-slide.slick-active {
   opacity: 1;
+  transform: scale(1);
 }
 .books-carousel .card-img-top {
   height: 500px;
   width: auto;
   object-fit: cover;
+}
+
+.card-img-top {
+  height: 333px;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

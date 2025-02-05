@@ -84,19 +84,19 @@ ob_start();
                     <ul class="list-unstyled">
                         <li class="d-flex align-items-start mb-3">
                             <i class="fas fa-book fa-5x mb-1 text-primary me-3 fs-30"></i>
-                            <span>Thousands of books to discover</span>
+                            <p>Thousands of books to discover</p>
                         </li>
                         <li class="d-flex align-items-start mb-3">
                             <i class="fas fa-user-tie fa-5x mb-3 text-primary me-3 fs-30"></i>
-                            <span>Connect with fellow book lovers</span>
+                            <p>Connect with fellow book lovers</p>
                         </li>
                         <li class="d-flex align-items-start mb-3">
                             <i class="fas fa-search fa-5x mb-3 text-primary me-3 fs-30"></i>
-                            <span>Personalized book recommendations</span>
+                            <p>Personalized book recommendations</p>
                         </li>
                         <li class="d-flex align-items-start">
                             <i class="fas fa-headphones-alt fa-5x mb-3 text-primary me-3 fs-30"></i>
-                            <span>Immersive reading experience with soundtracks</span>
+                            <p>Immersive reading experience with soundtracks</p>
                         </li>
                     </ul>
                 </section>

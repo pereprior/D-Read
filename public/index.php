@@ -12,10 +12,10 @@ ob_start();
             <section class="mb-4">
                 <h2 class="text-center mb-4"><i class="fas fa-tags"></i> Promociones</h2>
                 <div class="promo-carousel">
-                    <div><img src="img/promo4.png" alt="1"></div>
-                    <div><img src="img/promo1.png" alt="2"></div>
-                    <div><img src="img/promo3.png" alt="3"></div>
-                    <div><img src="img/promo2.png" alt="4"></div>
+                    <div class="shadow-sm d-flex justify-content-center align-items-center"><img src="img/promo4.png" alt="1"></div>
+                    <div class="shadow-sm d-flex justify-content-center align-items-center"><img src="img/promo1.png" alt="2"></div>
+                    <div class="shadow-sm d-flex justify-content-center align-items-center"><img src="img/promo3.png" alt="3"></div>
+                    <div class="shadow-sm d-flex justify-content-center align-items-center"><img src="img/promo2.png" alt="4"></div>
                 </div>
             </section>
 
@@ -55,7 +55,7 @@ ob_start();
             <section class="my-4 card-style p-4 rounded-3 shadow">
                 <h3 class="mb-3 text-muted"><i class="fas fa-star"></i> Recomendación del Día</h3>
                 <div class="shadow-sm">
-                    <img src="img/recommendation.jpg" class="card-img-top" alt="Libro Recomendado">
+                    <img src="img/book5.jpg" class="img-fluid rounded shadow-sm" alt="Libro Recomendado">
                 </div>
             </section>
         </aside>

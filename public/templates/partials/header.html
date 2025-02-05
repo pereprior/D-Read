@@ -15,7 +15,7 @@
                   </li>
                   <li class="nav-item">
                       <a href="books.php" id="library" class="nav-link text-uppercase <?= ($current_page == 'library') ? 'active' : '' ?>">
-                          <i class="fas fa-book"></i> Library
+                          <i class="fas fa-book-open"></i> Library
                       </a>
                   </li>
                   <li class="nav-item">
@@ -24,15 +24,15 @@
                       </a>
                   </li>
                   <li class="nav-item">
+                    <a href="about.php" id="about" class="nav-link text-uppercase <?= ($current_page == 'about') ? 'active' : '' ?>">
+                        <i class="fas fa-info-circle"></i> More About Us
+                    </a>
+                  </li>
+                  <li class="nav-item">
                       <a href="profile.php" id="profile" class="nav-link text-uppercase <?= ($current_page == 'profile') ? 'active' : '' ?>">
                           <i class="fas fa-user"></i> User Profile
                       </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="about.php" id="about" class="nav-link text-uppercase <?= ($current_page == 'about') ? 'active' : '' ?>">
-                        <i class="fas fa-info-circle"></i> More About Us
-                    </a>
-                </li>
                 </ul>
             </div>
           </nav>
@@ -57,5 +57,3 @@
   </div>
 
 </header>
-
-<script type="text/javascript" src="js/jquery/languageSelector.js"></script>
