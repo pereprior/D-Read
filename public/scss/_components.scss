@@ -377,3 +377,56 @@ i {
     height: 333px;
     max-width: 100%;
 }
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: variables.$secondary-color;
+    color: variables.$dark-bg-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.book-details {
+    text-align: -webkit-center;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+}
+
+.custom-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+}
+
+.custom-list-item:last-child {
+    border-bottom: none;
+}
+
+.custom-list-item i {
+    color: #007bff;
+    font-size: 1.5rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.custom-list-item strong {
+    margin-left: 10px;
+}
+
+.px-6 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

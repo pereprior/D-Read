@@ -29,7 +29,7 @@ $user = [
                 <h3 class="mb-2"><?= htmlspecialchars($user['name']) ?></h3>
                 <p class="text-muted"><?= htmlspecialchars($user['email']) ?></p>
                 <p class="text-muted"><i class="fas fa-calendar-alt"></i> Miembro desde: <?= htmlspecialchars($user['joined']) ?></p>
-                <a href="#" class="btn btn-primary mt-3">Editar Perfil</a>
+                <a href="#" class="btn btn-primary mt-3 btn-disabled">Editar Perfil</a>
             </div>
 
             <!-- User Stats -->
@@ -62,7 +62,7 @@ $user = [
 
         <!-- Profile Main Content -->
         <div class="col-lg-8 px-5">
-            <h2 class="text-center mb-4"><i class="fas fa-user"></i> Actividad Reciente</h2>
+            <h1 id="page-title" class="heading heading-secondary">Actividad Reciente</h1>
 
             <section class="mb-4">
                 <div class="card shadow-sm p-4">

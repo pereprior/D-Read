@@ -10,14 +10,16 @@ class Book {
     private string $publicationYear;
     private string $genre;
     private string $price;
+    private string $description;
 
-    public function __construct($id, $title, $author, $publicationYear, $genre, $price) {
+    public function __construct($id, $title, $author, $publicationYear, $genre, $price, $description) {
         $this->id = $id;
         $this->title = $title;
         $this->author = $author;
         $this->publicationYear = $publicationYear;
         $this->genre = $genre;
         $this->price = $price;
+        $this->description = $description;
     }
 
     public function getId() {
@@ -66,6 +68,14 @@ class Book {
 
     public function setPrice(string $price): void {
         $this->price = $price;
+    }
+
+    public function getDescription() {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void {
+        $this->description = $description;
     }
 
 }

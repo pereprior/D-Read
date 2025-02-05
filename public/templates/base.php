@@ -27,6 +27,7 @@ session_start();
     <script type="text/javascript" src="js/ajax/register.js"></script>
     <script type="text/javascript" src="js/jquery/darkMode.js"></script>
     <script type="text/javascript" src="js/jquery/navigation.js"></script>
+    <script type="text/javascript" src="js/jquery/notification.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="dark-mode">

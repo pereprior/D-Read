@@ -6,7 +6,7 @@ ob_start();
 
 <!-- Main Content -->
 <main class="py-3">
-    <div class="container mb-2">
+    <div class="container mb-2 mt-4">
         <div class="row">
             <!-- Main Content Area -->
             <div class="col-lg-8 px-5">
@@ -73,7 +73,7 @@ ob_start();
                 <section id="contact-info" class="my-4 text-center card-style p-4 rounded-3 shadow">
                     <h2 class="mb-3">Contact Us</h2>
                     <p class="text-muted">Have any questions? Reach out to us!</p>
-                    <a href="contact.php" class="btn btn-primary w-100">Get in Touch</a>
+                    <a href="contact.php" class="btn btn-primary w-100 btn-disabled">Get in Touch</a>
                 </section>
 
                 <!-- Why Choose Us Section -->
