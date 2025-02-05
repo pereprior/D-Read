@@ -1,0 +1,61 @@
+<header class="py-3">
+  <div class="container">
+      <!-- Header Title -->
+      <div class="d-flex justify-content-between align-items-center mb-3 header-title">
+          <!-- Logo -->
+          <img src="img/logo_d-read-trans.png" alt="D-Read Logo">
+
+          <nav class="pages-nav navbar navbar-expand-lg shadow-sm">
+            <div class="container">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a href="/" id="home" class="nav-link text-uppercase <?= ($current_page == 'home') ? 'active' : '' ?>">
+                          <i class="fas fa-home"></i> Home
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="books.php" id="library" class="nav-link text-uppercase <?= ($current_page == 'library') ? 'active' : '' ?>">
+                          <i class="fas fa-book"></i> Library
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="community.php" id="community" class="nav-link text-uppercase <?= ($current_page == 'community') ? 'active' : '' ?>">
+                          <i class="fas fa-users"></i> Community
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="profile.php" id="profile" class="nav-link text-uppercase <?= ($current_page == 'profile') ? 'active' : '' ?>">
+                          <i class="fas fa-user"></i> User Profile
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.php" id="about" class="nav-link text-uppercase <?= ($current_page == 'about') ? 'active' : '' ?>">
+                        <i class="fas fa-info-circle"></i> More About Us
+                    </a>
+                </li>
+                </ul>
+            </div>
+          </nav>
+
+          <!-- Login / Sign-up OR User Menu -->
+          <nav>
+              <ul class="nav">
+                    <li class="nav-item">
+                        <a href="logout.php" id="logout" class="nav-link btn btn-warning">
+                            <i class="fas fa-sign-out-alt me-1"></i> Logout
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="toggle-mode" class="btn">
+                            <i id="mode-icon" class="fas fa-moon trans-bg"></i>
+                        </button>
+                    </li>
+
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+</header>
+
+<script type="text/javascript" src="js/jquery/languageSelector.js"></script>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,9 +29,19 @@
     <script type="text/javascript" src="js/jquery/navigation.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="dark-mode">
 
-    <?php include('templates/partials/header.php'); ?>
+    <?php if (isset($_SESSION['user'])): ?>
+        <?php include('templates/partials/header.html'); ?>
+    <?php else: ?>
+        <section class="hero bg-primary text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bienvenido a D-Read</h1>
+                <p class="lead">Explora libros, comparte tus lecturas y sumérgete en la mejor experiencia literaria.</p>
+                <a href="register.php" class="btn btn-warning btn-lg mt-3 px-4">Únete ahora</a>
+            </div>
+        </section>
+    <?php endif; ?>
 
     <!-- Contenido dinámico -->
     <main class="container full-width">

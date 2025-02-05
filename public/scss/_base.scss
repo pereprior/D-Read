@@ -24,4 +24,8 @@ p {
 .dark-mode {
     background-color: variables.$dark-bg-color;
     color: variables.$dark-text-color !important;
+
+    .text-muted {
+        color: darken(variables.$dark-text-color, 20%) !important;
+    }
 }

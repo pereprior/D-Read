@@ -129,62 +129,6 @@ header .btn-warning:hover {
     }
 }
 
-// Language Selector
-.language-selector {
-    .flag-selector {
-        position: relative;
-
-        input[type='radio'] {
-            display: none;
-        }
-
-        label {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border: 2px solid transparent;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-
-            &:hover {
-                border-color: lighten(variables.$primary-color, 20%);
-                transform: scale(1.05);
-            }
-
-            @media (max-width: 600px) {
-                font-size: 0.875rem;
-                padding: 0.25rem;
-            }
-        }
-
-        i {
-            font-size: 1.25rem;
-            color: variables.$primary-color;
-
-            @media (max-width: 600px) {
-                font-size: 1rem;
-            }
-        }
-
-        input[type='radio']:checked + label {
-            border-color: variables.$primary-color;
-            background-color: rgba(variables.$primary-color, 0.1);
-            box-shadow: 0 0 10px rgba(variables.$primary-color, 0.3);
-        }
-    }
-
-    .flag-selector + .flag-selector {
-        margin-left: 1rem;
-
-        @media (max-width: 600px) {
-            margin-left: 0.5rem;
-        }
-    }
-}
-
 .dark-mode {
     background-color: variables.$dark-bg-color;
     color: variables.$dark-text-color;
@@ -360,4 +304,66 @@ i {
 
 .bg-light-footer {
     background-color: mix(variables.$bg-color, #343a40, 40%);
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.card-style {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.dark-mode .card-style {
+    background-color: variables.$dark-bg-color;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+
+    &:hover {
+        box-shadow: 0 16px 32px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.sm-usr-icn {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        width: 100px;
+    }
+}
+
+.books-carousel {
+    .slick-slide {
+        transition: opacity 0.5s ease-in-out;
+
+        &.slick-inactive {
+            opacity: 0.5;
+
+            .card-img-top {
+                height: 400px;
+            }
+        }
+
+        &.slick-active {
+            opacity: 1;
+        }
+    }
+
+    .card-img-top {
+        height: 500px;
+        width: auto;
+        object-fit: cover;
+    }
 }
