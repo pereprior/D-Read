@@ -437,4 +437,12 @@ i:hover {
   padding-right: 5rem;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /*# sourceMappingURL=styles.css.map */

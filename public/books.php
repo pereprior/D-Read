@@ -15,11 +15,17 @@ ob_start();
     </div>
   </div>
 
-  <div id="book-cards" class="row mt-4" style="min-height: 600px;">
+  <div id="book-cards" class="row mt-4" style="min-height: 500px;">
 
     <p class="text-muted">No books found for your search.</p>
 
   </div>
+
+  <div class="text-center mb-5 hide">
+      <a class="btn btn-success btn-disabled"><i class="fas fa-bookmark"></i> Save to Favorites</a>
+      <a class="btn btn-primary btn-disabled"><i class="fas fa-info-circle"></i> View Details</a>
+  </div>
+
 </div>
 
 <script type="module" src="js/widgets/jquery.tags.js"></script>
