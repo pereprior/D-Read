@@ -19,7 +19,6 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="vendor/flag-icons/css/flag-icons.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
