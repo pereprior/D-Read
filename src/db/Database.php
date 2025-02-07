@@ -8,16 +8,16 @@ use PDOException;
 class Database 
 {
 
-    private static $_instance; // Instancia unica de la base de datos
+    private static $_instance;
     private PDO $_connection;
 
     private function __construct() {
 
         $config = [
             'host' => '127.0.0.1',
-            'dbname' => 'dreadb',
+            'dbname' => 'DREADB',
             'username' => 'root',
-            'password' => 'secreto',
+            'password' => 'root',
             'charset' => 'utf8'
         ];
 

@@ -2,8 +2,8 @@
 
 return [
     'host' => 'localhost',
-    'dbname' => 'dreadb',
+    'dbname' => 'DREADB',
     'username' => 'root',
-    'password' => 'secreto',
+    'password' => 'root',
     'charset' => 'utf8'
 ];
