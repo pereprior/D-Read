@@ -1,54 +1,17 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-body {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #5D5250;
-  background-color: #F9F9F9;
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @use 'header';
+ *   | ^^^^^^^^^^^^^
+ *   '
+ *   public/scss/styles.scss 3:1  root stylesheet */
 
-header {
-  background-color: #f7f9fc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use 'header';\a   \2502  ^^^^^^^^^^^^^\a   \2575 \a   public/scss/styles.scss 3:1  root stylesheet";
 }
-
-header nav a {
-  color: #5D5250;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #f39c12; /* Cambia el color del enlace al pasar el cursor */
-}
-
-header .btn-warning {
-  background-color: #f39c12;
-  border: none;
-  transition: background-color 0.3s;
-}
-
-header .btn-warning:hover {
-  background-color: #d87d06;
-}
-
-/*# sourceMappingURL=styles.css.map */
