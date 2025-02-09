@@ -5,7 +5,7 @@ namespace App\Db;
 use PDO;
 use PDOException;
 
-class Database 
+class Database
 {
 
     private static $_instance;
