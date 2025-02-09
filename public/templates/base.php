@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="D-Read es una aplicación multiplataforma gratuita que transforma la lectura en una experiencia inmersiva.">
@@ -31,6 +31,7 @@ session_start();
 </head>
 <body class="dark-mode">
 
+    <!-- Pie de página si el usuario ha iniciado sesión -->
     <?php if (isset($_SESSION['user'])): ?>
         <?php include('templates/partials/header.html'); ?>
     <?php else: ?>
@@ -38,7 +39,7 @@ session_start();
             <div class="container">
                 <h1 class="display-4 fw-bold">Bienvenido a D-Read</h1>
                 <p class="lead">Explora libros, comparte tus lecturas y sumérgete en la mejor experiencia literaria.</p>
-                <a href="login.php" class="btn btn-warning btn-lg mt-3 px-4">Únete ahora</a>
+                <a href="login.php" class="btn btn-warning btn-lg mt-3 px-4" title="Únete ahora">Únete ahora</a>
             </div>
         </section>
     <?php endif; ?>
