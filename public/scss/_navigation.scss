@@ -1,0 +1,73 @@
+@use 'variables';
+
+.main-nav, .pages-nav {
+    a {
+        font-weight: variables.$font-weight-regular;
+        text-transform: uppercase;
+        margin: 0 10px;
+
+        @media (max-width: 600px) {
+            margin: 0 5px;
+            font-size: 14px;
+        }
+
+        &[title] {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.pages-nav {
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    .navbar-nav {
+        display: flex;
+        gap: 1rem;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .nav-item {
+            position: relative;
+
+            .nav-link {
+                color: variables.$text-color;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 0.5rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: variables.$primary-color;
+                    text-decoration: none;
+                    background-color: rgba(variables.$primary-color, 0.1);
+                    border-radius: 0.25rem;
+                }
+
+                &.active {
+                    color: variables.$primary-color;
+                    font-weight: bold;
+                    border-bottom: 2px solid variables.$primary-color;
+
+                    i {
+                        color: variables.$primary-color;
+                    }
+                }
+
+                @media (max-width: 600px) {
+                    padding: 0.25rem;
+                }
+            }
+        }
+    }
+
+    li#current a {
+        font-weight: variables.$font-weight-regular;
+        color: variables.$primary-color;
+    }
+}

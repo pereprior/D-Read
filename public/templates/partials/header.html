@@ -1,26 +1,54 @@
-<!-- header.html -->
-<header class="bg-light py-3 shadow-sm">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between">
-      <!-- Logo -->
-      <a href="index.php" class="d-flex align-items-center text-decoration-none">
-        <img src="img/logo_d-read.png" alt="D-Read Logo" class="me-3">
-      </a>
-
-      <!-- Navigation Menu -->
-      <nav class="d-flex gap-4">
-        <a href="home.php" class="text-decoration-none fw-bold">Home</a>
-        <a href="books.php" class="text-decoration-none fw-bold">Books</a>
-        <a href="share.php" class="text-decoration-none fw-bold">Share</a>
-        <a href="profile.php" class="text-decoration-none fw-bold">Profile</a>
-        <a href="contact.php" class="text-decoration-none fw-bold">Contact</a>
-      </nav>
-
-      <!-- Button or Profile Icon -->
-      <div class="d-flex gap-2">
-        <button class="btn btn-warning rounded-pill px-4 fw-bold">Sign Up</button>
-        <button class="btn btn-warning rounded-pill px-4 fw-bold">Log in</button>
-      </div>
+<header class="py-3">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3 header-title">
+            <img src="img/logo_d-read-trans.png" alt="D-Read Logo" class="img-fluid">
+  
+            <nav class="pages-nav navbar navbar-expand-lg shadow-sm">
+              <div class="container">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="/" id="home" class="nav-link text-uppercase <?= ($current_page == 'home') ? 'active' : '' ?>" title="Home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="books.php" id="library" class="nav-link text-uppercase <?= ($current_page == 'library') ? 'active' : '' ?>" title="Library">
+                            <i class="fas fa-book-open"></i> Library
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="community.php" id="community" class="nav-link text-uppercase <?= ($current_page == 'community') ? 'active' : '' ?>" title="Community">
+                            <i class="fas fa-users"></i> Community
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="about.php" id="about" class="nav-link text-uppercase <?= ($current_page == 'about') ? 'active' : '' ?>" title="More About Us">
+                          <i class="fas fa-info-circle"></i> More About Us
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.php" id="profile" class="nav-link text-uppercase <?= ($current_page == 'profile') ? 'active' : '' ?>" title="User Profile">
+                            <i class="fas fa-user"></i> User Profile
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+            </nav>
+  
+            <nav>
+                <ul class="nav">
+                      <li class="nav-item">
+                          <a href="logout.php" id="logout" class="nav-link btn btn-warning" title="Logout">
+                              <i class="fas fa-sign-out-alt me-1"></i> Logout
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <button id="toggle-mode" class="btn" title="Toggle Mode">
+                              <i id="mode-icon" class="fas fa-moon trans-bg"></i>
+                          </button>
+                      </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
 </header>

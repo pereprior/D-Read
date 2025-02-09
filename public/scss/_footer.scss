@@ -1,0 +1,64 @@
+@use 'variables';
+
+.footer {
+    color: variables.$dark-text-color;
+
+    h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: variables.$dark-text-color;
+
+        @media (max-width: 600px) {
+            font-size: 0.875rem;
+        }
+    }
+
+    i {
+        color: variables.$dark-text-color;
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            color: variables.$secondary-color;
+            transform: scale(1.1);
+        }
+    }
+
+    a {
+        color: #adb5bd;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: variables.$dark-text-color;
+            text-decoration: underline;
+        }
+
+        // Asegurarse de que los enlaces tengan atributos title para SEO
+        &[title] {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+
+        @media (max-width: 600px) {
+            font-size: 0.75rem;
+        }
+    }
+
+    .list-unstyled li {
+        margin-bottom: 0.75rem;
+
+        @media (max-width: 600px) {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.bg-light-footer {
+    background-color: mix(variables.$bg-color, #343a40, 20%);
+}

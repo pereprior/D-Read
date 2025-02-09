@@ -1,0 +1,52 @@
+@use 'variables';
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    nav a {
+        color: variables.$text-color;
+        transition: color 0.3s;
+
+        &:hover {
+            color: variables.$primary-color;
+        }
+
+        &[title] {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .btn-warning {
+        background-color: variables.$tertiary-color;
+        color: variables.$dark-bg-color;
+        border: none;
+        transition: background-color 0.3s;
+
+        i {
+            color: variables.$dark-bg-color !important;
+        }
+
+        &:hover {
+            background-color: darken(variables.$tertiary-color, 10%);
+            color: variables.$dark-bg-color;
+        }
+    }
+
+    .header-title img {
+        height: 50px;
+
+        @media (max-width: 600px) {
+            height: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 5px;
+    }
+}
